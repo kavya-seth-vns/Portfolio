@@ -1,23 +1,24 @@
-
-// EMAIL JS
-
-(function(){
-emailjs.init("YOUR_PUBLIC_KEY");
+(function () {
+emailjs.init("lyxvak6RaXRBegd5U");
 })();
 
 document
 .getElementById("contact-form")
-.addEventListener("submit", function(e){
+.addEventListener("submit", function (e) {
 
 e.preventDefault();
 
 emailjs.sendForm(
-"Yservice_e5onuol",
+"service_e5onuol",
 "template_5ulor2d",
 this
-).then(() => {
+).then(function () {
 
-alert("Message Sent!");
+alert("Message Sent Successfully!");
+
+}, function (error) {
+
+alert("Failed: " + JSON.stringify(error));
 
 });
 

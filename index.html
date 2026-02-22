@@ -183,13 +183,15 @@ View Project
 
 <h2>Contact Me</h2>
 
-<form id="contact-form">
+<form id="contact-form" action="https://formspree.io/f/xojnkraw" method="POST">
 
 <input type="text" name="name" placeholder="Your Name" required>
 
 <input type="email" name="email" placeholder="Your Email" required>
 
 <textarea name="message" placeholder="Your Message"></textarea>
+
+<input type="hidden" name="_next" value="https://kavya-seth-vns.github.io/thankyou.html">
 
 <button type="submit" class="btn" style="cursor: pointer;">Send Message</button>
 
@@ -206,8 +208,6 @@ target="_blank">
 <i class="fab fa-whatsapp"></i>
 
 </a>
-
-<script src="script.js"></script>
 
 </body>
 </html>
